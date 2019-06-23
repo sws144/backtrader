@@ -1,5 +1,6 @@
 # From https://www.backtrader.com/docu/quickstart/quickstart/#visual-inspection-plotting
 # Optimizer versions
+# Run from \Backtrader\ folder
 
 from __future__ import (absolute_import, division, print_function,
                         unicode_literals)
