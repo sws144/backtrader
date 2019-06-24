@@ -1,4 +1,10 @@
 # From https://www.backtrader.com/docu/quickstart/quickstart/#visual-inspection-plotting
+# Run from \Backtrader\ folder
+
+# Requirements for Anaconda package manager, run below in anaconda prompt
+# pip install backtrader
+# conda install matplotlib
+
 
 from __future__ import (absolute_import, division, print_function,
                         unicode_literals)
@@ -127,7 +133,7 @@ if __name__ == '__main__':
     # Datas are in a subfolder of the samples. Need to find where the script is
     # because it could have been called from anywhere
     modpath = os.path.dirname(os.path.abspath(sys.argv[0]))
-    datapath = os.path.join(modpath, 'backtrader\datas\orcl-1995-2014.txt')
+    datapath = os.path.join(modpath, 'orcl-1995-2014.txt')
 
     # Create a Data Feed
     data = bt.feeds.YahooFinanceCSVData(
