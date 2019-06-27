@@ -1,6 +1,14 @@
 # From https://www.backtrader.com/docu/quickstart/quickstart/#visual-inspection-plotting
-# Optimizer versions
-# Run from \Backtrader\ folder
+# Optimizer version
+# Run from folder that holds this file
+
+# code to auto add packages
+import subprocess
+import sys
+def install(package):
+    subprocess.call([sys.executable, "-m", "pip", "install", package])
+install("backtrader")
+install("matplotlib")
 
 from __future__ import (absolute_import, division, print_function,
                         unicode_literals)

@@ -1,13 +1,16 @@
 # From https://www.backtrader.com/docu/quickstart/quickstart/#visual-inspection-plotting
-# Run from \Backtrader\ folder
-
-# Requirements for Anaconda package manager, run below in anaconda prompt
-# pip install backtrader
-# conda install matplotlib
-
+# Run from folder that holds this file
 
 from __future__ import (absolute_import, division, print_function,
                         unicode_literals)
+
+# code to auto add packages
+import subprocess
+import sys
+def install(package):
+    subprocess.call([sys.executable, "-m", "pip", "install", package])
+install("backtrader")
+install("matplotlib")
 
 import datetime  # For datetime objects
 import os.path  # To manage paths
